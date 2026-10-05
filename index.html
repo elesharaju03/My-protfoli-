@@ -1,0 +1,2218 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Elesha Raju - Full Stack Java Developer Fresher Portfolio">
+
+<meta name="keywords"
+content="Elesha Raju, Java Developer, HTML, CSS, JavaScript, C++, Full Stack Java Developer">
+
+<meta name="author"
+content="Elesha Raju">
+
+<meta name="theme-color"
+content="#ff6b00">
+
+<meta property="og:title"
+content="Elesha Raju | Full Stack Java Developer">
+
+<meta property="og:description"
+content="Portfolio of Elesha Raju - Full Stack Java Developer">
+
+<meta property="og:image"
+content="https://drive.google.com/thumbnail?id=1y6P3REJ-BeTBhFgw2GV8o6GJBkJQNFt7&sz=w1000">
+
+<title>
+Elesha Raju | Full Stack Java Developer
+</title>
+
+
+<!-- ================= FAVICON ================= -->
+
+<link rel="icon"
+href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b00'/%3E%3Ctext x='50' y='70' text-anchor='middle' font-size='60' font-family='Arial' fill='white'%3EE%3C/text%3E%3C/svg%3E">
+
+
+<!-- ================= GOOGLE FONTS ================= -->
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+rel="stylesheet">
+
+
+<!-- ================= FONT AWESOME ================= -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+<style>
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+:root{
+--orange:#ff6b00;
+--orange-light:#ff8a24;
+--black:#080808;
+--dark:#111;
+--dark2:#171717;
+--white:#ffffff;
+--gray:#a5a5a5;
+--border:#292929;
+}
+
+body{
+font-family:"Inter",sans-serif;
+background:var(--black);
+color:white;
+line-height:1.6;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+position:fixed;
+top:0;
+left:0;
+right:0;
+height:75px;
+z-index:999;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 6%;
+background:rgba(8,8,8,.9);
+backdrop-filter:blur(15px);
+border-bottom:1px solid #222;
+}
+
+.logo{
+font-family:Poppins,sans-serif;
+font-weight:800;
+font-size:21px;
+}
+
+.logo span{
+color:var(--orange);
+}
+
+.logo small{
+font-family:Inter;
+font-size:11px;
+font-weight:500;
+color:#999;
+}
+
+nav{
+display:flex;
+gap:28px;
+}
+
+nav a{
+font-size:13px;
+color:#aaa;
+transition:.3s;
+}
+
+nav a:hover,
+nav a.active{
+color:white;
+}
+
+nav a.active{
+color:var(--orange);
+}
+
+.menu{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+section{
+max-width:1180px;
+margin:auto;
+padding:110px 25px;
+}
+
+.section-title{
+margin-bottom:45px;
+}
+
+.section-title.center{
+text-align:center;
+}
+
+.small-title{
+font-size:11px;
+letter-spacing:3px;
+font-weight:800;
+color:var(--orange);
+margin-bottom:15px;
+}
+
+.section-title h2{
+font-family:Poppins;
+font-size:clamp(35px,5vw,55px);
+line-height:1.1;
+}
+
+.section-title h2 span{
+color:var(--orange);
+}
+
+.section-title p{
+color:#777;
+margin-top:15px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+min-height:100vh;
+display:grid;
+grid-template-columns:1.1fr .9fr;
+align-items:center;
+gap:50px;
+padding-top:130px;
+}
+
+.hero h1{
+font-family:Poppins;
+font-size:clamp(42px,6vw,72px);
+line-height:1.05;
+letter-spacing:-2px;
+}
+
+.hero h1 span{
+color:var(--orange);
+}
+
+.hero-text{
+color:#aaa;
+max-width:650px;
+margin:25px 0;
+font-size:15px;
+}
+
+.buttons{
+display:flex;
+gap:13px;
+flex-wrap:wrap;
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+gap:10px;
+padding:13px 20px;
+border-radius:8px;
+font-size:13px;
+font-weight:700;
+border:1px solid var(--orange);
+transition:.3s;
+}
+
+.btn-primary{
+background:var(--orange);
+}
+
+.btn-primary:hover{
+background:var(--orange-light);
+transform:translateY(-3px);
+box-shadow:0 15px 35px #ff6b0030;
+}
+
+.btn-outline:hover{
+background:white;
+color:black;
+transform:translateY(-3px);
+}
+
+.hero-image{
+display:flex;
+justify-content:center;
+position:relative;
+}
+
+.profile-circle{
+width:390px;
+height:390px;
+border-radius:50%;
+padding:8px;
+background:
+linear-gradient(
+135deg,
+var(--orange),
+white,
+#222
+);
+box-shadow:
+0 0 80px #ff6b0030;
+}
+
+.profile-circle img{
+width:100%;
+height:100%;
+border-radius:50%;
+object-fit:cover;
+background:#222;
+}
+
+.floating{
+position:absolute;
+background:#151515;
+border:1px solid #333;
+padding:12px 17px;
+border-radius:10px;
+display:flex;
+align-items:center;
+gap:10px;
+box-shadow:0 15px 40px #000;
+animation:float 4s ease-in-out infinite;
+}
+
+.floating i{
+color:var(--orange);
+font-size:25px;
+}
+
+.floating small{
+display:block;
+color:#777;
+font-size:9px;
+}
+
+.floating b{
+font-size:12px;
+}
+
+.float1{
+left:0;
+top:60px;
+}
+
+.float2{
+right:0;
+bottom:60px;
+animation-delay:1s;
+}
+
+@keyframes float{
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about{
+border-top:1px solid #181818;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:70px;
+align-items:center;
+}
+
+.about-text p{
+color:#aaa;
+margin-bottom:18px;
+}
+
+.tags{
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.tags span{
+border:1px solid #333;
+padding:7px 12px;
+border-radius:50px;
+font-size:10px;
+color:#bbb;
+}
+
+.about-card{
+background:
+linear-gradient(
+145deg,
+#171717,
+#0d0d0d
+);
+border:1px solid #292929;
+padding:30px;
+border-radius:15px;
+}
+
+.about-icon{
+font-size:45px;
+color:var(--orange);
+margin-bottom:10px;
+}
+
+.about-card h3{
+font-size:25px;
+}
+
+.about-card p{
+color:#777;
+margin:7px 0 20px;
+}
+
+.line{
+height:1px;
+background:#292929;
+margin-bottom:15px;
+}
+
+.info-row{
+display:flex;
+justify-content:space-between;
+padding:10px 0;
+border-bottom:1px solid #222;
+font-size:11px;
+}
+
+.info-row span{
+color:#777;
+}
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skills{
+max-width:none;
+background:#0d0d0d;
+padding-left:max(25px,calc((100% - 1130px)/2));
+padding-right:max(25px,calc((100% - 1130px)/2));
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:18px;
+}
+
+.skill-card{
+background:#141414;
+border:1px solid #282828;
+border-radius:14px;
+padding:28px 20px;
+text-align:center;
+transition:.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-8px);
+border-color:var(--orange);
+box-shadow:
+0 20px 45px #0008;
+}
+
+.skill-icon{
+width:60px;
+height:60px;
+margin:0 auto 18px;
+border-radius:12px;
+background:#26180e;
+display:grid;
+place-items:center;
+font-size:28px;
+color:var(--orange);
+}
+
+.skill-card h3{
+font-size:16px;
+margin-top:5px;
+}
+
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+
+.projects{
+border-top:1px solid #181818;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+}
+
+.project-card{
+background:#111;
+border:1px solid #272727;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+border-color:#555;
+box-shadow:
+0 20px 45px #0008;
+}
+
+.project-image{
+height:200px;
+display:grid;
+place-items:center;
+font-size:70px;
+color:white;
+background:
+radial-gradient(
+circle,
+#ff6b0050,
+#171717 60%
+);
+}
+
+.project-body{
+padding:22px;
+}
+
+.project-number{
+color:var(--orange);
+font-size:10px;
+font-weight:800;
+}
+
+.project-body h3{
+margin:5px 0 8px;
+font-size:20px;
+}
+
+.project-body p{
+font-size:12px;
+color:#858585;
+min-height:65px;
+}
+
+.tech{
+display:flex;
+gap:7px;
+flex-wrap:wrap;
+margin:15px 0;
+}
+
+.tech span{
+border:1px solid #333;
+border-radius:50px;
+padding:5px 9px;
+font-size:9px;
+color:#bbb;
+}
+
+.github{
+color:var(--orange);
+font-size:11px;
+font-weight:700;
+}
+
+
+/* =====================================================
+   CERTIFICATES
+===================================================== */
+
+.certificates{
+max-width:none;
+background:#0d0d0d;
+padding-left:max(25px,calc((100% - 1130px)/2));
+padding-right:max(25px,calc((100% - 1130px)/2));
+}
+
+.cert-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.certificate{
+display:flex;
+gap:15px;
+background:#141414;
+border:1px solid #282828;
+border-radius:14px;
+padding:16px;
+transition:.3s;
+}
+
+.certificate:hover{
+transform:translateY(-7px);
+}
+
+.certificate-image{
+width:105px;
+height:85px;
+flex-shrink:0;
+border-radius:8px;
+display:grid;
+place-items:center;
+text-align:center;
+font-weight:800;
+background:
+linear-gradient(
+135deg,
+#ff6b00,
+#171717
+);
+}
+
+.certificate-image small{
+font-size:8px;
+}
+
+.certificate h3{
+font-size:14px;
+}
+
+.certificate p{
+font-size:10px;
+color:#777;
+margin:4px 0 8px;
+}
+
+.certificate a{
+color:var(--orange);
+font-size:11px;
+font-weight:700;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact{
+max-width:none;
+background:
+linear-gradient(
+110deg,
+#111,
+#080808
+);
+padding-left:max(25px,calc((100% - 1130px)/2));
+padding-right:max(25px,calc((100% - 1130px)/2));
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr .8fr;
+gap:80px;
+align-items:center;
+}
+
+.contact h2{
+font-family:Poppins;
+font-size:clamp(38px,5vw,55px);
+line-height:1.1;
+}
+
+.contact h2 span{
+color:var(--orange);
+}
+
+.contact-description{
+color:#777;
+margin:20px 0 30px;
+}
+
+.contact-info{
+display:grid;
+gap:15px;
+}
+
+.contact-info a{
+display:flex;
+align-items:center;
+gap:14px;
+color:#aaa;
+font-size:12px;
+}
+
+.contact-info i{
+color:var(--orange);
+width:18px;
+text-align:center;
+}
+
+.social{
+display:flex;
+gap:10px;
+margin-top:25px;
+}
+
+.social a{
+width:40px;
+height:40px;
+border:1px solid #333;
+border-radius:9px;
+display:grid;
+place-items:center;
+color:#aaa;
+transition:.3s;
+}
+
+.social a:hover{
+background:var(--orange);
+border-color:var(--orange);
+color:white;
+transform:translateY(-4px);
+}
+
+.contact-form{
+background:#151515;
+border:1px solid #292929;
+border-radius:15px;
+padding:25px;
+}
+
+.contact-form h3{
+margin-bottom:20px;
+}
+
+.contact-form label{
+display:block;
+font-size:10px;
+color:#888;
+margin-bottom:14px;
+}
+
+.contact-form input,
+.contact-form textarea{
+display:block;
+width:100%;
+margin-top:6px;
+padding:12px;
+border-radius:8px;
+border:1px solid #2b2b2b;
+background:#0e0e0e;
+color:white;
+outline:none;
+font-family:inherit;
+font-size:12px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+border-color:var(--orange);
+}
+
+.contact-form button{
+margin-top:5px;
+}
+
+#formMessage{
+font-size:10px;
+color:#777;
+margin-top:10px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+border-top:1px solid #222;
+padding:25px 6%;
+display:flex;
+justify-content:space-between;
+gap:20px;
+color:#777;
+font-size:10px;
+}
+
+footer strong{
+color:var(--orange);
+font-size:14px;
+}
+
+
+/* =====================================================
+   TOP BUTTON
+===================================================== */
+
+.top{
+position:fixed;
+right:20px;
+bottom:20px;
+width:42px;
+height:42px;
+border:1px solid #333;
+border-radius:9px;
+background:#151515;
+color:white;
+display:none;
+place-items:center;
+cursor:pointer;
+z-index:100;
+}
+
+.top.show{
+display:grid;
+}
+
+.top:hover{
+background:var(--orange);
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+.reveal{
+opacity:0;
+transform:translateY(30px);
+transition:
+opacity .8s ease,
+transform .8s ease;
+}
+
+.reveal.show{
+opacity:1;
+transform:none;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px){
+
+nav{
+position:absolute;
+top:75px;
+right:5%;
+width:230px;
+background:#111;
+border:1px solid #292929;
+border-radius:12px;
+padding:18px;
+display:none;
+flex-direction:column;
+gap:15px;
+}
+
+nav.open{
+display:flex;
+}
+
+.menu{
+display:block;
+}
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero-text{
+margin-left:auto;
+margin-right:auto;
+}
+
+.buttons{
+justify-content:center;
+}
+
+.hero-image{
+height:420px;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.skills-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.project-grid{
+grid-template-columns:1fr;
+}
+
+.cert-grid{
+grid-template-columns:1fr;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+
+@media(max-width:600px){
+
+section{
+padding:80px 18px;
+}
+
+.hero{
+padding-top:110px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.profile-circle{
+width:280px;
+height:280px;
+}
+
+.hero-image{
+height:340px;
+}
+
+.floating{
+transform:scale(.8);
+}
+
+.float1{
+left:0;
+top:30px;
+}
+
+.float2{
+right:0;
+bottom:25px;
+}
+
+.skills-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.skill-card{
+padding:20px 10px;
+}
+
+.project-grid{
+grid-template-columns:1fr;
+}
+
+.cert-grid{
+grid-template-columns:1fr;
+}
+
+footer{
+flex-direction:column;
+text-align:center;
+}
+
+.logo small{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<a href="#home"
+class="logo">
+
+<span>Elesha</span>
+
+<small>
+| Full Stack Java Developer
+</small>
+
+</a>
+
+
+<div class="menu"
+id="menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+
+<nav id="nav">
+
+<a href="#home"
+class="active">
+Home
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#skills">
+Skills
+</a>
+
+<a href="#projects">
+Projects
+</a>
+
+<a href="#certificates">
+Certificates
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</nav>
+
+</header>
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section class="hero"
+id="home">
+
+<div class="reveal">
+
+<div class="small-title">
+
+<span>●</span>
+
+AVAILABLE FOR OPPORTUNITIES
+
+</div>
+
+
+<h1>
+
+I’m a Full Stack
+
+<br>
+
+<span>Java Developer</span>
+
+</h1>
+
+
+<p class="hero-text">
+
+I am a passionate and detail-oriented Java Developer with a strong
+foundation in object-oriented programming, database management,
+and modern web technologies. I love solving logical challenges
+and developing creative software solutions.
+
+</p>
+
+
+<div class="buttons">
+
+<a href="#contact"
+class="btn btn-primary">
+
+Contact Me
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-image reveal">
+
+<div class="profile-circle">
+
+<img
+src="https://drive.google.com/thumbnail?id=1y6P3REJ-BeTBhFgw2GV8o6GJBkJQNFt7&sz=w1000"
+alt="Elesha Raju Professional Photo"
+onerror="this.src='https://via.placeholder.com/500x500/171717/ff6b00?text=ELESHA+RAJU'"
+>
+
+</div>
+
+
+<div class="floating float1">
+
+<i class="fa-brands fa-java"></i>
+
+<div>
+
+<b>Java</b>
+
+<small>
+Developer
+</small>
+
+</div>
+
+</div>
+
+
+<div class="floating float2">
+
+<i class="fa-solid fa-code"></i>
+
+<div>
+
+<b>Clean Code</b>
+
+<small>
+Problem Solver
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="about"
+id="about">
+
+<div class="section-title reveal">
+
+<div class="small-title">
+ABOUT ME
+</div>
+
+<h2>
+
+Building my career,
+
+<br>
+
+<span>
+one project at a time.
+</span>
+
+</h2>
+
+</div>
+
+
+<div class="about-grid">
+
+<div class="about-text reveal">
+
+<p>
+
+I am a fresher with a strong interest in software development
+and modern web technologies. I enjoy creating responsive,
+user-friendly websites and developing logical solutions using
+programming languages.
+
+</p>
+
+
+<p>
+
+My technical foundation includes HTML, CSS, JavaScript,
+Java, and C++. I am continuously improving my programming
+skills through projects, practice, and hands-on learning.
+
+</p>
+
+
+<p>
+
+I am passionate about continuous learning,
+problem-solving, and turning real-world requirements
+into useful software solutions.
+
+</p>
+
+
+<div class="tags">
+
+<span>
+Problem Solving
+</span>
+
+<span>
+Continuous Learning
+</span>
+
+<span>
+Teamwork
+</span>
+
+<span>
+Web Development
+</span>
+
+</div>
+
+</div>
+
+
+<div class="about-card reveal">
+
+<div class="about-icon">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+</div>
+
+<h3>
+Software Developer
+</h3>
+
+<p>
+Passionate about coding, web development, and building useful applications.
+</p>
+
+<div class="line"></div>
+
+
+<div class="info-row">
+
+<span>
+Frontend
+</span>
+
+<b>
+HTML • CSS • JS
+</b>
+
+</div>
+
+
+<div class="info-row">
+
+<span>
+Programming
+</span>
+
+<b>
+Java • C++
+</b>
+
+</div>
+
+
+<div class="info-row">
+
+<span>
+Focus
+</span>
+
+<b>
+Web Development
+</b>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section class="skills"
+id="skills">
+
+<div class="section-title center reveal">
+
+<div class="small-title">
+TECHNICAL SKILLS
+</div>
+
+<h2>
+
+My
+
+<span>
+Skills.
+</span>
+
+</h2>
+
+<p>
+
+Technologies and programming languages I use to build projects.
+
+</p>
+
+</div>
+
+
+<div class="skills-grid">
+
+
+<!-- HTML -->
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">
+
+<i class="fa-brands fa-html5"></i>
+
+</div>
+
+<h3>
+HTML
+</h3>
+
+</div>
+
+
+<!-- CSS -->
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">
+
+<i class="fa-brands fa-css3-alt"></i>
+
+</div>
+
+<h3>
+CSS
+</h3>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">
+
+<i class="fa-brands fa-js"></i>
+
+</div>
+
+<h3>
+JavaScript
+</h3>
+
+</div>
+
+
+<!-- JAVA -->
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">
+
+<i class="fa-brands fa-java"></i>
+
+</div>
+
+<h3>
+Java
+</h3>
+
+</div>
+
+
+<!-- C++ -->
+
+<div class="skill-card reveal">
+
+<div class="skill-icon">
+
+<i class="fa-solid fa-code"></i>
+
+</div>
+
+<h3>
+C++
+</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section class="projects"
+id="projects">
+
+<div class="section-title reveal">
+
+<div class="small-title">
+SELECTED PROJECTS
+</div>
+
+<h2>
+
+Learning through
+
+<span>
+building.
+</span>
+
+</h2>
+
+</div>
+
+
+<div class="project-grid">
+
+
+<!-- PROJECT 01 -->
+
+<div class="project-card reveal">
+
+<div class="project-image">
+
+<i class="fa-solid fa-book"></i>
+
+</div>
+
+
+<div class="project-body">
+
+<div class="project-number">
+PROJECT 01
+</div>
+
+<h3>
+Library Management System
+</h3>
+
+<p>
+
+CUI-based Library Management System developed
+to manage books, members, issue and return operations,
+and library records.
+
+</p>
+
+
+<div class="tech">
+
+<span>
+Java
+</span>
+
+<span>
+C++
+</span>
+
+</div>
+
+
+<a href="https://elesharaju03.github.io/Alit/"
+target="_blank"
+rel="noopener noreferrer"
+class="github">
+
+View Project
+
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 02 -->
+
+<div class="project-card reveal">
+
+<div class="project-image">
+
+<i class="fa-solid fa-car"></i>
+
+</div>
+
+
+<div class="project-body">
+
+<div class="project-number">
+PROJECT 02
+</div>
+
+<h3>
+Auto Lite Car Showroom
+</h3>
+
+<p>
+
+Responsive HTML-based car showroom website designed
+to showcase cars, their details, features,
+and showroom information.
+
+</p>
+
+
+<div class="tech">
+
+<span>
+HTML
+</span>
+
+<span>
+CSS
+</span>
+
+<span>
+JavaScript
+</span>
+
+</div>
+
+
+<a href="https://elesharaju03.github.io/Alit/"
+target="_blank"
+rel="noopener noreferrer"
+class="github">
+
+View Project
+
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CERTIFICATES
+===================================================== -->
+
+<section class="certificates"
+id="certificates">
+
+<div class="section-title center reveal">
+
+<div class="small-title">
+CERTIFICATES
+</div>
+
+<h2>
+
+Learning that
+
+<span>
+counts.
+</span>
+
+</h2>
+
+</div>
+
+
+<div class="cert-grid">
+
+
+<!-- CERTIFICATE 01 -->
+
+<div class="certificate reveal">
+
+<div class="certificate-image">
+
+JAVA
+
+<br>
+
+<small>
+DEVELOPMENT
+</small>
+
+</div>
+
+<div>
+
+<h3>
+Java Development
+</h3>
+
+<p>
+Programming & Development
+</p>
+
+<a href="#"
+onclick="showLinkMessage(event)">
+
+View Certificate
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- CERTIFICATE 02 -->
+
+<div class="certificate reveal">
+
+<div class="certificate-image">
+
+WEB
+
+<br>
+
+<small>
+DEVELOPMENT
+</small>
+
+</div>
+
+<div>
+
+<h3>
+Web Development
+</h3>
+
+<p>
+HTML, CSS & JavaScript
+</p>
+
+<a href="#"
+onclick="showLinkMessage(event)">
+
+View Certificate
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- CERTIFICATE 03 -->
+
+<div class="certificate reveal">
+
+<div class="certificate-image">
+
+C++
+
+<br>
+
+<small>
+PROGRAMMING
+</small>
+
+</div>
+
+<div>
+
+<h3>
+C++ Programming
+</h3>
+
+<p>
+Programming Fundamentals
+</p>
+
+<a href="#"
+onclick="showLinkMessage(event)">
+
+View Certificate
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact"
+id="contact">
+
+<div class="contact-grid">
+
+
+<div class="reveal">
+
+<div class="small-title">
+GET IN TOUCH
+</div>
+
+
+<h2>
+
+Let's build something
+
+<br>
+
+<span>
+meaningful together.
+</span>
+
+</h2>
+
+
+<p class="contact-description">
+
+Have a project, internship opportunity,
+or just want to connect?
+Feel free to reach out.
+
+</p>
+
+
+<div class="contact-info">
+
+
+<!-- LOCATION -->
+
+<a href="https://www.google.com/maps/search/?api=1&query=Eluru+District,+Andhra+Pradesh,+India"
+target="_blank"
+rel="noopener noreferrer">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<span>
+
+Eluru District,
+<br>
+Andhra Pradesh, India
+
+</span>
+
+</a>
+
+
+<!-- PHONE -->
+
+<a href="tel:+919502962779">
+
+<i class="fa-solid fa-phone"></i>
+
+<span>
++91 9502962779
+</span>
+
+</a>
+
+
+<!-- EMAIL -->
+
+<a href="mailto:skgamez417@gmail.com">
+
+<i class="fa-solid fa-envelope"></i>
+
+<span>
+skgamez417@gmail.com
+</span>
+
+</a>
+
+</div>
+
+
+<!-- =====================================================
+     SOCIAL LINKS
+===================================================== -->
+
+<div class="social">
+
+
+<!-- LINKEDIN -->
+
+<a href="https://www.linkedin.com/in/elesha-raju-71ab0b42b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="LinkedIn">
+
+<i class="fa-brands fa-linkedin-in"></i>
+
+</a>
+
+
+<!-- GITHUB / PROJECT -->
+
+<a href="https://elesharaju03.github.io/Alit/"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="GitHub">
+
+<i class="fa-brands fa-github"></i>
+
+</a>
+
+
+<!-- INSTAGRAM -->
+
+<a href="https://www.instagram.com/"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Instagram">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     CONTACT FORM
+===================================================== -->
+
+<form class="contact-form reveal"
+id="contactForm">
+
+<h3>
+Send a Message
+</h3>
+
+
+<label>
+
+Name
+
+<input
+type="text"
+id="name"
+placeholder="Your name"
+required>
+
+</label>
+
+
+<label>
+
+Email
+
+<input
+type="email"
+id="email"
+placeholder="you@example.com"
+required>
+
+</label>
+
+
+<label>
+
+Message
+
+<textarea
+id="message"
+rows="5"
+placeholder="Tell me about your project..."
+required></textarea>
+
+</label>
+
+
+<button
+type="submit"
+class="btn btn-primary">
+
+Send Message
+
+<i class="fa-solid fa-paper-plane"></i>
+
+</button>
+
+
+<div id="formMessage"></div>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div>
+
+<strong>
+Elesha Raju
+</strong>
+
+|
+
+Full Stack Java Developer
+
+</div>
+
+
+<p>
+
+©
+
+<span id="year"></span>
+
+Elesha Raju.
+
+Built using HTML, CSS, and JavaScript.
+
+</p>
+
+</footer>
+
+
+<!-- =====================================================
+     TOP BUTTON
+===================================================== -->
+
+<button
+class="top"
+id="topButton"
+aria-label="Back to top">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const menu =
+document.getElementById("menu");
+
+const nav =
+document.getElementById("nav");
+
+
+menu.addEventListener(
+"click",
+function(){
+
+nav.classList.toggle("open");
+
+}
+);
+
+
+/* =====================================================
+   CLOSE MOBILE MENU
+===================================================== */
+
+document
+.querySelectorAll("nav a")
+.forEach(function(link){
+
+link.addEventListener(
+"click",
+function(){
+
+nav.classList.remove("open");
+
+}
+);
+
+});
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+const observer =
+new IntersectionObserver(
+
+function(entries){
+
+entries.forEach(function(entry){
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},
+
+{
+threshold:0.12
+}
+
+);
+
+
+document
+.querySelectorAll(".reveal")
+.forEach(function(element){
+
+observer.observe(element);
+
+});
+
+
+/* =====================================================
+   ACTIVE NAVIGATION
+===================================================== */
+
+const sections =
+document.querySelectorAll("section[id]");
+
+const navigationLinks =
+document.querySelectorAll("nav a");
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+let current="home";
+
+
+sections.forEach(function(section){
+
+const sectionTop =
+section.offsetTop - 150;
+
+
+if(window.scrollY >= sectionTop){
+
+current =
+section.getAttribute("id");
+
+}
+
+});
+
+
+navigationLinks.forEach(function(link){
+
+link.classList.remove("active");
+
+
+if(
+link.getAttribute("href")
+===
+"#"+current
+){
+
+link.classList.add("active");
+
+}
+
+});
+
+}
+);
+
+
+/* =====================================================
+   TOP BUTTON
+===================================================== */
+
+const topButton =
+document.getElementById("topButton");
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+if(window.scrollY > 500){
+
+topButton.classList.add("show");
+
+}
+
+else{
+
+topButton.classList.remove("show");
+
+}
+
+}
+);
+
+
+topButton.addEventListener(
+"click",
+function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+);
+
+
+/* =====================================================
+   CURRENT YEAR
+===================================================== */
+
+document
+.getElementById("year")
+.textContent =
+new Date().getFullYear();
+
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+document
+.getElementById("contactForm")
+.addEventListener(
+"submit",
+function(event){
+
+event.preventDefault();
+
+
+const name =
+document.getElementById("name").value;
+
+
+document
+.getElementById("formMessage")
+.textContent =
+
+"Thank you, "
++
+name
++
+"! Your message form is ready to connect with a backend.";
+
+
+this.reset();
+
+}
+);
+
+
+/* =====================================================
+   CERTIFICATE LINK MESSAGE
+===================================================== */
+
+function showLinkMessage(event){
+
+event.preventDefault();
+
+alert(
+"Please add the actual Certificate URL here."
+);
+
+}
+
+</script>
+
+</body>
+</html>
+```
